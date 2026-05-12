@@ -1,4 +1,16 @@
 """
+Sign up a student for a specified extracurricular activity.
+
+Parameters:
+    activity_name (str): The name of the activity to sign up for.
+    email (str): The student's email address.
+
+Returns:
+    dict: Confirmation message with the signed-up activity and student email.
+
+Raises:
+    HTTPException: 404 if the activity is not found.
+    HTTPException: 400 if the student is already signed up for the activity.
 High School Management System API
 
 A super simple FastAPI application that allows students to view and sign up
